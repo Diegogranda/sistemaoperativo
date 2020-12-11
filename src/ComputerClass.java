@@ -48,6 +48,7 @@ public String getName() {
     }
 
     public void install(){
+        System.out.println("asdasd");
 
     }
 }
