@@ -5,12 +5,14 @@ public class SoftwareClass {
     private int softwareRamMemortyRquierement;
 
     // Constructores
+
     public SoftwareClass(String softwareName, String softwareVersion, int softwareSpaceRequirement, int softwareRamMemortyRquierement) {
         this.softwareName = softwareName;
         this.softwareVersion = softwareVersion;
         this.softwareSpaceRequirement = softwareSpaceRequirement;
         this.softwareRamMemortyRquierement = softwareRamMemortyRquierement;
     }
+
 
     //Getters y Setters
 

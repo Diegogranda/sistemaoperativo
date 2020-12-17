@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class OperatingSystemClass {
     private String osName;
     private int osRamMemmoryRequirement;
-    private SoftwareClass[] software;
+    private ArrayList <SoftwareClass> softwares;
     private String osVersion;
     private String osArchitecture;
     boolean osonlyCommand;
@@ -9,10 +11,9 @@ public class OperatingSystemClass {
 
     // constructores
 
-    public OperatingSystemClass(String osName, int osRamMemmoryRequirement, SoftwareClass[] software, String osVersion, String osArchitecture, boolean osonlyCommand, int osSpaceRequieremnt) {
+    public OperatingSystemClass(String osName, int osRamMemmoryRequirement, String osVersion, String osArchitecture, boolean osonlyCommand, int osSpaceRequieremnt) {
         this.osName = osName;
         this.osRamMemmoryRequirement = osRamMemmoryRequirement;
-        this.software = software;
         this.osVersion = osVersion;
         this.osArchitecture = osArchitecture;
         this.osonlyCommand = osonlyCommand;
@@ -38,12 +39,12 @@ public class OperatingSystemClass {
         this.osRamMemmoryRequirement = osRamMemmoryRequirement;
     }
 
-    public SoftwareClass[] getSoftware() {
-        return software;
+    public ArrayList<SoftwareClass> getSoftwares() {
+        return softwares;
     }
 
-    public void setSoftware(SoftwareClass[] software) {
-        this.software = software;
+    public void setSoftwares(ArrayList<SoftwareClass> softwares) {
+        this.softwares = softwares;
     }
 
     public String getOsVersion() {
